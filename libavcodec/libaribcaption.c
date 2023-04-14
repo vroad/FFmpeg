@@ -1108,7 +1108,7 @@ static int aribcaption_init(AVCodecContext *avctx)
 static const AVOption options[] = {
     { "sub_type", "subtitle rendering type",
       OFFSET(subtitle_type), AV_OPT_TYPE_INT,
-      { .i64 = SUBTITLE_ASS }, SUBTITLE_NONE, SUBTITLE_ASS, SD, "type" },
+      { .i64 = SUBTITLE_BITMAP }, SUBTITLE_NONE, SUBTITLE_ASS, SD, "type" },
     { "none",   "do nothing", 0, AV_OPT_TYPE_CONST,
       { .i64 = SUBTITLE_NONE }, .flags = SD, .unit = "type" },
     { "bitmap", "bitmap rendering", 0, AV_OPT_TYPE_CONST,
